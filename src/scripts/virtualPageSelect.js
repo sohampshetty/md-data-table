@@ -31,7 +31,7 @@ function virtualPageSelect() {
     content.on('scroll', function () {
       if((content.prop('clientHeight') + content.prop('scrollTop')) >= content.prop('scrollHeight')) {
         $scope.$applyAsync(function () {
-          setPages(getMin(self.pages.length + 10, self.total));
+          setPages(getMin(self.pages.length + 500, self.total));
         });
       }
     });
